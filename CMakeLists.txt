@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.0.0)
-project(Architrex VERSION 0.1.0)
+project(Renderden VERSION 0.1.0)
 
 include(CTest)
 enable_testing()
@@ -19,7 +19,7 @@ target_include_directories(glad PUBLIC dependencies/glad/include)
 set(LINMATH_INCLUDE_DIR "${CMAKE_SOURCE_DIR}/dependencies/linmath")
 
 # Specify project directory
-add_subdirectory("Architrex")
+add_subdirectory("Renderden")
 
 set(CPACK_PROJECT_NAME ${PROJECT_NAME})
 set(CPACK_PROJECT_VERSION ${PROJECT_VERSION})
