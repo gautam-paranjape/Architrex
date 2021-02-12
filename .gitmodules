@@ -1,0 +1,6 @@
+[submodule "dependencies/glfw"]
+	path = dependencies/glfw
+	url = https://github.com/glfw/glfw.git
+[submodule "dependencies/linmath"]
+	path = dependencies/linmath
+	url = https://github.com/datenwolf/linmath.h.git
