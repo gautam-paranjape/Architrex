@@ -1,7 +1,7 @@
 #define GL_SILENCE_DEPRECATION
 #define GLFW_INCLUDE_NONE
 
-#include <glad/gl.h>
+
 #include <GLFW/glfw3.h>
 
 #include "../Renderden.cpp"
@@ -16,6 +16,6 @@ class Triangle: public RenderdenEngine {
         int triangleDrawCall() {
             vertexShader = glCreateShader(GL_VERTEX_SHADER);
         }
-    private:
+    private: 
         unsigned int vertexShader;
 };  
