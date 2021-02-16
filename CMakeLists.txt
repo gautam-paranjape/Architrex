@@ -13,10 +13,9 @@ add_subdirectory("dependencies/glfw")
 
 # Compile GLAD
 add_library(glad dependencies/glad/src/gl.c)
-target_include_directories(glad PUBLIC dependencies/glad/include)
 
-# Linmath setup
-set(LINMATH_INCLUDE_DIR "${CMAKE_SOURCE_DIR}/dependencies/linmath")
+target_include_directories(glad PUBLIC dependencies/glad/include)
+include_directories(dependencies)
 
 # Specify project directory
 add_subdirectory("Renderden")
