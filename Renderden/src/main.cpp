@@ -25,12 +25,7 @@ int main() {
         std::cout << "Failed to initialize GLFW" << std::endl;
         return -1;
     } 
-    
-    if (!gladLoadGL((glfwGetProcAddress)))
-    {
-        std::cout << "Failed to initialize GLAD" << std::endl;
-        return -1;
-    }
+
     //Check if the window does not exist
     if (!window) {
         glfwTerminate();
@@ -47,6 +42,11 @@ int main() {
     
     //Make the OpenGL window context current
     glfwMakeContextCurrent(window);
+
+    if (!gladLoadGL((glfwGetProcAddress))) {
+        std::cout << "Failed to initialize GLAD" << std::endl;
+        return -1;
+    }
 
     //Loop every frame and render something, until the user closes the window;
     while (!glfwWindowShouldClose(window)) {
