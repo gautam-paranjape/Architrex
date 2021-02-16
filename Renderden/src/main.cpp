@@ -38,21 +38,10 @@ int main(void)
         return -1;
     }
     
-    float vertices[] =
-    {
-        0, 0.5, 0.0, // top corner
-        -0.5, -0.5, 0.0, // bottom left corner
-        0.5, -0.5, 0.0 // bottom right corner
-    };
-    
     /* Loop until the user closes the window */
     while (!glfwWindowShouldClose(window))
     {
-        glClear( GL_COLOR_BUFFER_BIT );
-        
-        //Render        
-        glDrawArrays( GL_TRIANGLES, 0, 3 ); // draw the vertixes
- 
+        glClear( GL_COLOR_BUFFER_BIT ); 
         
         // Swap front and back buffers
         glfwSwapBuffers(window);
