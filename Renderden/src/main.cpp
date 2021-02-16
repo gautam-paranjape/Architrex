@@ -4,15 +4,15 @@
 #include <GLFW/glfw3.h>
 #include <iostream>
 
-//Properties
-const int WIDTH = 640;
-const int HEIGHT = 480;
-const char *name = "Renderden";
-
-int main() {
-    //Create an instance of the GLFWwindow class, and create a window with its OpenGL context
-    //Set parameters
-    GLFWwindow* window = glfwCreateWindow(WIDTH, HEIGHT, name, NULL, NULL);
+int main(void)
+{
+    GLFWwindow *window;
+    
+    // Initialize the library
+    if (!glfwInit()) {
+        std::cout << "Failed to initialize GLFW" << std::endl;
+        return -1;
+    } 
 
     //Initialize and configure
     glfwInit();
@@ -20,41 +20,48 @@ int main() {
     glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 3);
     glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
 
-    //Glad and Glfw initialization error handling
-    if (!glfwInit()) {
-        std::cout << "Failed to initialize GLFW" << std::endl;
-        return -1;
-    } 
-
-    //Check if the window does not exist
-    if (!window) {
-        glfwTerminate();
-        return -1;
-    }
-
-    //Check for failure of GLFW window creation
-    if (window == NULL)
-    {
+    
+    // Create a windowed mode window and its OpenGL context
+    window = glfwCreateWindow(640, 480, "Renderden", NULL, NULL);
+    
+    if (window == NULL) {
         std::cout << "Failed to create GLFW window" << std::endl;
         glfwTerminate();
         return -1;
     }
-    
-    //Make the OpenGL window context current
+
     glfwMakeContextCurrent(window);
 
-    if (!gladLoadGL((glfwGetProcAddress))) {
+    if (!gladLoadGL((glfwGetProcAddress)))
+    {
         std::cout << "Failed to initialize GLAD" << std::endl;
         return -1;
     }
-
-    //Loop every frame and render something, until the user closes the window;
-    while (!glfwWindowShouldClose(window)) {
-        glClear(GL_COLOR_BUFFER_BIT);
-
-        //Render objects, called per frame;
-        //Swap back and front buffers
+    
+    float vertices[] =
+    {
+        0, 0.5, 0.0, // top corner
+        -0.5, -0.5, 0.0, // bottom left corner
+        0.5, -0.5, 0.0 // bottom right corner
+    };
+    
+    /* Loop until the user closes the window */
+    while (!glfwWindowShouldClose(window))
+    {
+        glClear( GL_COLOR_BUFFER_BIT );
+        
+        //Render        
+        glDrawArrays( GL_TRIANGLES, 0, 3 ); // draw the vertixes
+ 
+        
+        // Swap front and back buffers
         glfwSwapBuffers(window);
-        glfwPollEvents(); //Poll for process events
+        
+        // Poll for and process events
+        glfwPollEvents();
     }
+    
+    glfwTerminate();
+    
+    return 0;
 }
