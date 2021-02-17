@@ -1,10 +1,10 @@
 #define GL_SILENCE_DEPRECATION
 #define GLFW_INCLUDE_NONE
 
-#include "../Renderden.cpp"
 #include <stdio.h>
 #include <iostream>
 #include <vector>
+#include "../Renderden.cpp"
 #include "../shaders/Shader.h"
 
 using namespace Renderden;
