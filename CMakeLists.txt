@@ -14,7 +14,7 @@ add_subdirectory("dependencies/glfw")
 # Compile GLAD
 add_library(glad dependencies/glad/src/gl.c)
 
-add_executable(Renderden Renderden/src/main.cpp Renderden/src/renderden/Renderden.cpp Renderden/src/renderden/Renderden.h Renderden/src/shapes/Shape.cpp Renderden/src/shapes/Shape.h)
+add_executable(Renderden Renderden/main.cpp)
 
 target_link_libraries(Renderden glfw glad)
 
