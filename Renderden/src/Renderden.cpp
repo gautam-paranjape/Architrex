@@ -5,7 +5,6 @@
 #include <GLFW/glfw3.h>
 #include <iostream>
 #include "glm/glm.hpp"
-#include "Shader.h"
 #include "../Renderden/src/shapes/Shape.cpp"
 
 //Renderden Namespace
@@ -35,15 +34,6 @@ namespace Renderden {
                     glfwTerminate();
                     return -1;
                 }
-
-                std::vector<float> vertices = {
-                    -0.5f, -0.5f, 0.0f,
-                    0.5f, -0.5f,
-                    
-                }
-
-                Shape() triangle;
-
 
                 //Create a current OpenGL context
                 glfwMakeContextCurrent(window);
