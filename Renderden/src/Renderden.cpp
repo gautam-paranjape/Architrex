@@ -42,6 +42,8 @@ namespace Renderden {
                     return -1;
                 }
 
+                glClearColor(0.2f, 0.2f, 0.2f, 1.0f);
+
                 //Main render loop, called once per frame
                 while (!glfwWindowShouldClose(window)) {
                     glClear(GL_COLOR_BUFFER_BIT);

@@ -3,6 +3,6 @@
 using namespace Renderden;
 
 int main() {
-    RenderdenEngine rd;
-    rd.RenderdenInitFunction();
+	RenderdenEngine rd;
+	rd.RenderdenInitFunction();
 }
