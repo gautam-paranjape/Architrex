@@ -5,8 +5,10 @@
 #include <iostream>
 #include <vector>
 
-namespace Renderden {
-    class Shape {
+namespace Renderden
+{
+    class Shape
+    {
     public:
         int drawCall(std::vector<int> VertexArray);
     };

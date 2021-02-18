@@ -2,7 +2,8 @@
 
 using namespace Renderden;
 
-int main() {
+int main()
+{
     RenderdenEngine rd;
     rd.RenderdenInitFunction();
     std::cout << "Hello";

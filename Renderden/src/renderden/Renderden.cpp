@@ -48,7 +48,7 @@ int Renderden::RenderdenEngine::RenderdenInitFunction()
         return -1;
     }
 
-    glClearColor(0.2f, 0.2f, 0.2f,1.0f);
+    glClearColor(0.2f, 0.2f, 0.2f, 1.0f);
 
     //Main render loop, called once per frame
     while (!glfwWindowShouldClose(window))
