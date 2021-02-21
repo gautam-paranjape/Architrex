@@ -8,9 +8,8 @@
 #include <stdio.h>
 #include <iostream>
 
-using namespace Renderden;
 
-class Triangle: public RenderdenEngine {
+class Triangle: private Renderden::RenderdenEngine {
     public:
         //Triangle draw call
         int triangleDrawCall(); 

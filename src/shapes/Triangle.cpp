@@ -13,5 +13,5 @@ using namespace Renderden;
 
 int Triangle::triangleDrawCall()
 {
-    vertexShader = glCreateShader(GL_VERTEX_SHADER); // do you not have autosave?
+    vertexShader = glCreateShader(GL_VERTEX_SHADER);
 }
