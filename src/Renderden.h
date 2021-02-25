@@ -1,4 +1,3 @@
-#pragma once
 #define GL_SILENCE_DEPRECATION
 #define GLFW_INCLUDE_NONE
 
@@ -10,7 +9,7 @@
 namespace Renderden {
 
     //Main class
-    class RenderdenEngine {
+    class RenderdenEngine {k 
         public:
             int RenderdenInitFunction();
         //Private properties
@@ -19,6 +18,8 @@ namespace Renderden {
             const int WIDTH = 640;
             const int HEIGHT = 480;
             const char* name = "Renderden Sandbox";
-    }; 
+    }; //after i get this working
 
-} 
+} //STOP MOVING SO MUCH  ok do the mouse input
+//let me use the terminal
+//how come only you can do it

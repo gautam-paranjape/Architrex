@@ -65,4 +65,109 @@ namespace Renderden {
             const int HEIGHT = 480;
             const char* name = "Renderden Sandbox";
     };
+
+}        //Private properties
+        private:
+            GLFWwindow* window;
+            const int WIDTH = 640;
+            const int HEIGHT = 480;
+            const char* name = "Renderden Sandbox";
+    };
+
+}        //Private properties
+        private:
+            GLFWwindow* window;
+            const int WIDTH = 640;
+            const int HEIGHT = 480;
+            const char* name = "Renderden Sandbox";
+    };
+
+}        //Private properties
+        private:
+            GLFWwindow* window;
+            const int WIDTH = 640;
+            const int HEIGHT = 480;
+            const char* name = "Renderden Sandbox";
+    };
+
+}        //Private properties
+        private:
+            GLFWwindow* window;
+            const int WIDTH = 640;
+            const int HEIGHT = 480;
+            const char* name = "Renderden Sandbox";
+    };
+
+}        //Private properties
+        private:
+            GLFWwindow* window;
+            const int WIDTH = 640;
+            const int HEIGHT = 480;
+            const char* name = "Renderden Sandbox";
+    };
+
+}        //Private properties
+        private:
+            GLFWwindow* window;
+            const int WIDTH = 640;
+            const int HEIGHT = 480;
+            const char* name = "Renderden Sandbox";
+    };
+
+}        //Private properties
+        private:
+            GLFWwindow* window;
+            const int WIDTH = 640;
+            const int HEIGHT = 480;
+            const char* name = "Renderden Sandbox";
+    };
+
+}        //Private properties
+        private:
+            GLFWwindow* window;
+            const int WIDTH = 640;
+            const int HEIGHT = 480;
+            const char* name = "Renderden Sandbox";
+    };
+
+}        //Private properties
+        private:
+            GLFWwindow* window;
+            const int WIDTH = 640;
+            const int HEIGHT = 480;
+            const char* name = "Renderden Sandbox";
+    };
+
+}        //Private properties
+        private:
+            GLFWwindow* window;
+            const int WIDTH = 640;
+            const int HEIGHT = 480;
+            const char* name = "Renderden Sandbox";
+    };
+
+}        //Private properties
+        private:
+            GLFWwindow* window;
+            const int WIDTH = 640;
+            const int HEIGHT = 480;
+            const char* name = "Renderden Sandbox";
+    };
+
+}        //Private properties
+        private:
+            GLFWwindow* window;
+            const int WIDTH = 640;
+            const int HEIGHT = 480;
+            const char* name = "Renderden Sandbox";
+    };
+
+}        //Private properties
+        private:
+            GLFWwindow* window;
+            const int WIDTH = 640;
+            const int HEIGHT = 480;
+            const char* name = "Renderden Sandbox";
+    };
+
 }
