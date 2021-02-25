@@ -11,15 +11,15 @@ set(GLFW_BUILD_EXAMPLES OFF CACHE BOOL "" FORCE)
 
 add_subdirectory("dependencies/glfw")
 
-add_executable(Renderden src/main.cpp src/Renderden.cpp src/Renderden.h src/shapes/Triangle.cpp src/shapes/Triangle.h)
-
-target_link_libraries(Renderden glfw glad)
-
 # Compile GLAD
 add_library(glad dependencies/glad/src/gl.c)
 target_include_directories(glad PUBLIC dependencies/glad/include)
 
 # Linmath setup
+set(LINMATH_INCLUDE_DIR "${CMAKE_SOURCE_DIR}/dependencies/linmath")
+
+# Specify project directory
+add_subdirectory("Renderden")
 
 set(CPACK_PROJECT_NAME ${PROJECT_NAME})
 set(CPACK_PROJECT_VERSION ${PROJECT_VERSION})

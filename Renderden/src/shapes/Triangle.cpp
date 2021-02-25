@@ -13,7 +13,9 @@ using namespace Renderden;
 class Triangle: public RenderdenEngine {
     public:
         //Triangle draw call
-        int triangleDrawCall(); 
+        int triangleDrawCall() {
+            vertexShader = glCreateShader(GL_VERTEX_SHADER);
+        }
     private:
         unsigned int vertexShader;
 };  
